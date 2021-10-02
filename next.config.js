@@ -5,7 +5,7 @@ module.exports = {
         {
           source: '/:path*',
           has: [{ type: 'host', value: '(?<subdomain>.*).vercel.(?<extension>group|gg|xyz|wtf|app' }],
-          destination: '/?subdomain=:subdomain&path=:path*&extension=:extension',
+          destination: '/?subdomain=:subdomain&extension=:extension&path=:path*',
         },
       ],
       afterFiles: [],
